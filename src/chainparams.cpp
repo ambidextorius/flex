@@ -55,7 +55,7 @@ public:
         vAlertPubKey = ParseHex("048b0e7aadbf923f97425b880a4ab4149a728f9e3a0c4adfa3b7ff0a7760fec5bd80022fbcff91cb75d1853c7de15d1e7f94e9c1fce994063af86124925af22b1e");
         nDefaultPort = 30137;
         nRPCPort = 30138;
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 21);
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 2);
 
         const char* pszTimestamp = "Flux, nothing else";
         CTransaction txNew;
