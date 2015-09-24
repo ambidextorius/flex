@@ -1131,6 +1131,10 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 100 * COIN;
+    if(pindexBest->nHeight == 2)
+{
+	nSubsidy = 250000 * COIN;
+}
 
     LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
 
